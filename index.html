@@ -12,7 +12,10 @@
     body { margin: 0; background: radial-gradient(1200px 600px at 50% -200px, #1d1709 0%, var(--bg) 60%); background-color: var(--bg);
       color: var(--text); font: 16px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, Inter, sans-serif; }
     main { max-width: 720px; margin: 0 auto; padding: 56px 20px 72px; }
-    header { text-align: center; margin-bottom: 40px; }
+    header { text-align: center; margin-bottom: 28px; }
+    nav { display: flex; justify-content: center; gap: 6px; margin: 0 0 36px; }
+    nav a { text-decoration: none; color: var(--muted); font-size: 14px; padding: 6px 14px; border-radius: 999px; border: 1px solid var(--line); }
+    nav a.on { color: #111; background: var(--gold); border-color: var(--gold); font-weight: 600; }
     header img { width: 88px; height: 88px; }
     .brand { margin: 14px 0 2px; font-weight: 650; font-size: 26px; letter-spacing: .24em; padding-left: .24em;
       background: linear-gradient(180deg,#fff1c9,#ffcf6b 40%,#f2a72e 65%,#a8681a); -webkit-background-clip: text; background-clip: text; color: transparent; }
@@ -41,6 +44,7 @@
     <div class="brand">WAVECAM</div>
     <div class="sub">Cinema Camera</div>
   </header>
+  <nav><a class="on" href="./">Privacy Policy</a><a href="terms/">Terms of Service</a></nav>
 
   <h1>Privacy Policy</h1>
   <p class="date">Last updated: 18 November 2026</p>
@@ -76,7 +80,7 @@
   <h2>Contact</h2>
   <p>Questions about this policy: <a href="https://github.com/banjiice-maker/wavecam-privacy/issues">open an issue here</a>.</p>
 
-  <footer>WaveCam · Cinema camera for Android</footer>
+  <footer>WaveCam · Cinema camera for Android · <a href="terms/">Terms of Service</a></footer>
 </main>
 </body>
 </html>
